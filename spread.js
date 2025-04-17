@@ -16,12 +16,12 @@ const data = [
     ],
   ],
 ];
-console.log("---Cara Pertama---");
-const merged = {
-  ...data[0][1][3].string[1].value,
-  hallo: "Helo!",
+console.log("---Cara Pertama ---");
+data[0][1][3].string[1] = {
+  ...data[0][1][3].string[1],
+  value: "Helo!",
 };
-console.log(merged.hallo);
+console.log(data[0][1][3].string[1].value);
 console.log("---Cara Kedua---");
 const merged2 = {
   ...data,
