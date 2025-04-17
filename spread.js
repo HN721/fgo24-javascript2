@@ -34,4 +34,26 @@ const merged3 = {
   value: "Helo!",
 };
 console.log(merged3);
+onst bio = {
+  name: "Jhon O'Connor",
+  age: 30,
+};
 
+const extraInfo = {
+  skills: ["Web Programming", "Painting"],
+  education: [
+    {
+      name: "SMP 1 Denpasar",
+      year: 2012,
+    },
+  ],
+};
+const merged = {
+  ...extraInfo,
+  skills: [...extraInfo.skills, "Hiking"],
+};
+const profile = {
+  ...bio,
+  ...merged,
+};
+console.log(profile);
