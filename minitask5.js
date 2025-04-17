@@ -10,7 +10,7 @@ const konversi = (c, type, callback) => {
   } else if (type === "k") {
     return callback(c);
   } else {
-    console.log("harap masukkan F,R atau K");
+    console.log("harap masukkan f,r atau k");
   }
 };
 let result = null;
