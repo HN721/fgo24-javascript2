@@ -3,7 +3,7 @@ const temperature = {
     return c * 1.8 + 32;
   },
   reamur: function (c) {
-    return (c * 4) / 5;
+    return c * 4 / 5;
   },
   kelvin: function (c) {
     return c + 273;
