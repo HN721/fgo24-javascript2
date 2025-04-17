@@ -51,6 +51,13 @@ const extraInfo = {
 const merged = {
   ...extraInfo,
   skills: [...extraInfo.skills, "Hiking"],
+  education: [
+    ...extraInfo.education,
+    {
+      name: "SMP 2 Denpasar",
+      year: 2014,
+    },
+  ],
 };
 const profile = {
   ...bio,
