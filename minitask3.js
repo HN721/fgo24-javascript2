@@ -8,15 +8,16 @@ const temperature = {
   kelvin: function (c) {
     return c + 273;
   },
-  total: function (c, selector) {
+  total: function (c, type) {
     if (typeof c !== "number") {
       console.log("harap masukkan angka");
+      return
     }
-    if (selector === "F") {
+    if (type === "F") {
       return this.farenheit(c);
-    } else if (selector === "R") {
+    } else if (type === "R") {
       return this.reamur(c);
-    } else if (selector === "K") {
+    } else if (type === "K") {
       return this.kelvin(c);
     } else {
       console.log("harap masukkan F,R atau K");
