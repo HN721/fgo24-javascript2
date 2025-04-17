@@ -28,3 +28,10 @@ const merged2 = {
   hallo: "Helo!",
 };
 console.log(merged2.hallo);
+console.log("---Cara Ketiga---");
+const merged3 = {
+  ...data[0][1][3].string[1],
+  value: "Helo!",
+};
+console.log(merged3);
+
